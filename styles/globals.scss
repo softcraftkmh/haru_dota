@@ -1,0 +1,43 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Cabin", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #f4f4f4;
+
+  @media (max-width: 1200px) {
+    font-size: 60%;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 55%;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 50%;
+  }
+
+  @media (max-width: 767px) {
+    &.disable-scroll-mobile {
+      position: fixed;
+      overflow-y: hidden;
+    }
+  }
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
