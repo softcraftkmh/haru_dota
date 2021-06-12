@@ -1,0 +1,36 @@
+@use './constants.scss';
+
+:root {
+	font-size: 62.5%;
+	background-color: #f4f4f4;
+
+	@media #{constants.$tablet} {
+		font-size: 60%;
+	}
+
+	@media #{constants.$mobile} {
+		font-size: 50%;
+		position: fixed;
+		overflow-y: hidden;
+	}
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Cabin', sans-serif;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}

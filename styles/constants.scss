@@ -1,0 +1,14 @@
+$mobile: '(max-width: 768px)';
+$tablet: '(max-width: 992px)';
+$desktop: '(min-width: 993px)';
+
+:root {
+	--primary-default: #fbc02d;
+	--primary-light: #fff263;
+	--primary-dark: #c49000;
+
+	--small-spacing: 4px;
+	--normal-spacing: calc (2 * var(--small-spacing));
+	--large-spacing: calc (3 * var(--small-spacing));
+	--extra-large-spacing: calc (4 * var(--small-spacing));
+}
