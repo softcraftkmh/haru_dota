@@ -1,16 +1,17 @@
-import { Match } from 'models/data';
 import useSWR from 'swr';
 
-import AppSEO from './components/shared/SEO';
+import AppSEO from 'components/shared/SEO';
+import Matches from 'components/Matches';
+
+import { Match } from 'models/data';
 
 const index = () => {
 	const { data } = useSWR<Match[]>('/proMatches');
-	console.log('-> ~ index ~ data', data);
 
 	return (
 		<>
 			<AppSEO />
-			Hi, this is the home page.
+			{data && <Matches matches={data} />}
 		</>
 	);
 };

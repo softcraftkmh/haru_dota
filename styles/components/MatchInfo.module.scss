@@ -1,0 +1,52 @@
+.container {
+	width: 100%;
+	margin-bottom: 0;
+	background-color: #fff;
+}
+
+.time {
+	display: block;
+	padding: var(--spacing-normal);
+	border-bottom: 1px solid #000;
+}
+
+.info {
+	width: 100%;
+	background: url(/images/svg/vs-bg.svg) 100% / 100% no-repeat;
+	padding: var(--spacing-large);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: var(--spacing-extra-large);
+	border-bottom: 1px solid #000;
+}
+
+.team {
+	&__logo {
+		margin: auto 0;
+		width: var(--avatar-normal);
+		height: var(--avatar-normal);
+		object-fit: contain;
+	}
+	&__info {
+		width: 100%;
+	}
+	&__radiant {
+		width: 100%;
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: var(--spacing-extra-large);
+		color: var(--radiant);
+	}
+	&__dire {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr auto;
+		gap: var(--spacing-extra-large);
+		color: var(--dire);
+		text-align: right;
+	}
+}
+.league {
+	margin: 0;
+	padding: var(--spacing-normal);
+}

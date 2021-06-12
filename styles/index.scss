@@ -4,14 +4,31 @@
 	font-size: 62.5%;
 	background-color: #f4f4f4;
 
+	// CSS Variables
+	--primary-default: #fbc02d;
+	--primary-light: #fff263;
+	--primary-dark: #c49000;
+
+	--radiant: #33691e;
+	--dire: #b71c1c;
+
+	--spacing-small: 4px;
+	--spacing-normal: calc(2 * var(--spacing-small));
+	--spacing-large: calc(3 * var(--spacing-small));
+	--spacing-extra-large: calc(4 * var(--spacing-small));
+
+	--header-height: 80px;
+	--container-max-width: 1200px;
+
+	--avatar-normal: 40px;
+
 	@media #{constants.$tablet} {
 		font-size: 60%;
 	}
 
 	@media #{constants.$mobile} {
 		font-size: 50%;
-		position: fixed;
-		overflow-y: hidden;
+		--container-max-width: calc(100vw - var(--spacing-large));
 	}
 }
 
