@@ -9,11 +9,11 @@ type AppSEOProps = {
 };
 
 const DEFAULT: AppSEOProps = {
-	title: 'Template',
-	description: 'This is the template app.',
-	url: 'https://www.template.vercel.app',
+	title: 'Haru DOTA',
+	description: 'Your DOTA 2 partner.',
+	url: 'https://www.harudota.vercel.app',
 	image:
-		'https://images.unsplash.com/photo-1583623025817-d180a2221d0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3VzaGl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+		'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg',
 };
 
 const AppSEO = ({
