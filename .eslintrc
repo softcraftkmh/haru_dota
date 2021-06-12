@@ -1,0 +1,5 @@
+{
+	"extends": ["next", "airbnb", "prettier"],
+	"parser": "babel-eslint",
+	"root": true
+}

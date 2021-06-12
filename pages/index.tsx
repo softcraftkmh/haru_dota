@@ -1,4 +1,4 @@
-import AppSEO from "./components/shared/SEO";
+import AppSEO from './components/shared/SEO';
 
 const index = () => {
 	return (
