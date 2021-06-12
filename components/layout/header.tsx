@@ -6,7 +6,7 @@ const Header = () => {
 			<div className={styles.container}>
 				<div className={styles.content}>
 					<a href="" className={styles.title}>
-						Header
+						春 DOTA
 					</a>
 				</div>
 			</div>

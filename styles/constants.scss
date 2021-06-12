@@ -7,8 +7,11 @@ $desktop: '(min-width: 993px)';
 	--primary-light: #fff263;
 	--primary-dark: #c49000;
 
-	--small-spacing: 4px;
-	--normal-spacing: calc (2 * var(--small-spacing));
-	--large-spacing: calc (3 * var(--small-spacing));
-	--extra-large-spacing: calc (4 * var(--small-spacing));
+	--spacing-small: 4px;
+	--spacing-normal: calc (2 * var(--spacing-small));
+	--spacing-large: calc (3 * var(--spacing-small));
+	--spacing-extra-large: calc (4 * var(--spacing-small));
+
+	--header-height: 80px;
+	--container-max-width: 1200px;
 }

@@ -11,6 +11,10 @@ class MyDocument extends Document {
 						rel="stylesheet"
 					/>
 					<link
+						href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap"
+						rel="stylesheet"
+					/>
+					<link
 						rel="stylesheet"
 						href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
 					/>
