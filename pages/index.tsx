@@ -27,7 +27,11 @@ export const getStaticProps: GetStaticProps = async () => {
 	const matches = await await (
 		await fetch(`${process.env.NEXT_PUBLIC_OPEN_DOTA_API}/proMatches`)
 	).json();
-	return { props: { matches } };
+	return {
+		props: { matches },
+		// will revalidate when a request comes in, at most once every 15 minutes
+		revalidate: 60 * 15,
+	};
 };
 
 export default index;
