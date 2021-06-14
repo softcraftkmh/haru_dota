@@ -23,8 +23,8 @@
 .team {
 	&__logo {
 		margin: auto 0;
-		width: var(--avatar-normal);
-		height: var(--avatar-normal);
+		width: var(--avatar-normal-width);
+		height: var(--avatar-normal-height);
 		object-fit: contain;
 	}
 	&__info {

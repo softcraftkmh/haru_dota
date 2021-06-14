@@ -9,7 +9,7 @@ type MatchInfoProps = {
 
 const MatchInfo: React.FC<MatchInfoProps> = ({ match }) => {
 	const onErrorImage = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-		e.currentTarget.src = '/images/team/default.png';
+		e.currentTarget.src = '/images/team/default.svg';
 	};
 
 	return (

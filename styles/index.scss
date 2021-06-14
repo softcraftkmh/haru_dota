@@ -20,7 +20,8 @@
 	--header-height: 80px;
 	--container-max-width: 1200px;
 
-	--avatar-normal: 40px;
+	--avatar-normal-width: 80px;
+	--avatar-normal-height: 40px;
 
 	@media #{constants.$tablet} {
 		font-size: 60%;
