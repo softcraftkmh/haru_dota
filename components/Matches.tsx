@@ -3,7 +3,6 @@ import { useCycle } from 'framer-motion';
 import shuffle from 'lodash/shuffle';
 import { Match } from 'models/data';
 import { useEffect } from 'react';
-
 import styles from 'styles/components/Matches.module.scss';
 
 type MatchesProps = {

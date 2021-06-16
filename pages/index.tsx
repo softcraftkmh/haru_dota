@@ -1,10 +1,8 @@
-import useSWR from 'swr';
-
-import AppSEO from 'components/shared/SEO';
 import Matches from 'components/Matches';
-
+import AppSEO from 'components/shared/SEO';
 import { Match } from 'models/data';
 import { GetStaticProps } from 'next';
+import useSWR from 'swr';
 
 type indexProps = {
 	matches: Match[];
