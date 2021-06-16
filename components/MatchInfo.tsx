@@ -1,4 +1,5 @@
 import { format, formatDuration } from 'date-fns';
+import { motion } from 'framer-motion';
 import { Match } from 'models/data';
 
 import styles from 'styles/components/MatchInfo.module.scss';
@@ -13,7 +14,15 @@ const MatchInfo: React.FC<MatchInfoProps> = ({ match }) => {
 	};
 
 	return (
-		<section className={styles.container}>
+		<motion.section
+			className={styles.container}
+			key={match.match_id}
+			layout
+			transition={{
+				type: 'Inertia',
+				duration: 1,
+			}}
+		>
 			<time className={styles.time}>
 				{format(match.start_time * 1000, 'dd-MMM  hh:mm aa')} (
 				{formatDuration({ minutes: +(match.duration / 60).toFixed(0) })})
@@ -51,7 +60,7 @@ const MatchInfo: React.FC<MatchInfoProps> = ({ match }) => {
 			<div>
 				<p className={styles.league}>{match.league_name}</p>
 			</div>
-		</section>
+		</motion.section>
 	);
 };
 

@@ -12,6 +12,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 		<SWRConfig
 			value={{
 				fetcher,
+				revalidateOnMount: true,
 				shouldRetryOnError: false,
 			}}
 		>

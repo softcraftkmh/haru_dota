@@ -11,14 +11,14 @@ type indexProps = {
 };
 
 const index: React.FC<indexProps> = ({ matches }) => {
-	const { data } = useSWR<Match[]>('/proMatches', null, {
+	const { data } = useSWR<Match[]>('/proMatches', {
 		initialData: matches,
 	});
 
 	return (
 		<>
 			<AppSEO />
-			{data && <Matches matches={data} />}
+			{data && <Matches matches={data.splice(0, 12)} />}
 		</>
 	);
 };
