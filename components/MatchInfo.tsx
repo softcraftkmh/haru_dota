@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { format, formatDuration } from 'date-fns';
 import { motion } from 'framer-motion';
 import { Match } from 'models/data';
@@ -32,7 +33,7 @@ const MatchInfo: React.FC<MatchInfoProps> = ({ match }) => {
 					<img
 						className={styles.team__logo}
 						src={`/images/team/${match.radiant_name}.png`}
-						alt="team 1"
+						alt="Radiant"
 						onError={onErrorImage}
 					/>
 					<div className={styles.team__info}>
@@ -52,7 +53,7 @@ const MatchInfo: React.FC<MatchInfoProps> = ({ match }) => {
 					<img
 						className={styles.team__logo}
 						src={`/images/team/${match.dire_name}.png`}
-						alt="team 1"
+						alt="Radiant"
 						onError={onErrorImage}
 					/>
 				</div>

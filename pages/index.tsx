@@ -8,7 +8,7 @@ type indexProps = {
 	matches: Match[];
 };
 
-const index: React.FC<indexProps> = ({ matches }) => {
+const Index: React.FC<indexProps> = ({ matches }) => {
 	const { data } = useSWR<Match[]>('/proMatches', {
 		initialData: matches,
 	});
@@ -32,4 +32,4 @@ export const getStaticProps: GetStaticProps = async () => {
 	};
 };
 
-export default index;
+export default Index;

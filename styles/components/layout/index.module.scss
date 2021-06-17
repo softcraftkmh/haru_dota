@@ -1,4 +1,4 @@
 .container {
 	max-width: 1200px;
-	margin: 5rem auto;
+	margin: var(--app-container-vertical-margin) auto;
 }

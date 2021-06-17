@@ -1,6 +1,8 @@
 import { useField } from 'formik';
+import Image from 'next/image';
 import React, { useState } from 'react';
 import styles from 'styles/components/shared/input.module.scss';
+import { getCSSVarNumber } from 'utils/css';
 
 type InputProps = {
 	name: string;
@@ -55,11 +57,10 @@ const Input = ({
 				/>
 
 				{type === 'password' && isShowPassword && (
-					<img
-						placeholder={placeholder}
+					<Image
 						src={
 							inputType === 'text'
-								? '/icons/visibility.svg'
+								? '/icons/visibility_on.svg'
 								: '/icons/visibility_off.svg'
 						}
 						alt="icon"
@@ -67,6 +68,8 @@ const Input = ({
 							setInputType(inputType === 'text' ? 'password' : 'text')
 						}
 						className={styles.password_icon}
+						width={getCSSVarNumber('--icon-normal-width')}
+						height={getCSSVarNumber('--icon-normal-height')}
 					/>
 				)}
 

@@ -23,6 +23,11 @@
 	--avatar-normal-width: 80px;
 	--avatar-normal-height: 40px;
 
+	--icon-normal-width: 16px;
+	--icon-normal-height: 16px;
+
+	--app-container-vertical-margin: 32px;
+
 	@media #{constants.$tablet} {
 		font-size: 60%;
 	}
@@ -30,6 +35,7 @@
 	@media #{constants.$mobile} {
 		font-size: 50%;
 		--container-max-width: calc(100vw - var(--spacing-large));
+		--app-container-vertical-margin: 16px;
 	}
 }
 

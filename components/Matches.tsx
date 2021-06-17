@@ -16,11 +16,11 @@ const Matches: React.FC<MatchesProps> = ({ matches }) => {
 		shuffle(matches)
 	);
 
-	useEffect(() => {
-		setTimeout(() => {
-			setInfos();
-		}, 8000);
-	}, [infos, setInfos]);
+	// useEffect(() => {
+	// 	setTimeout(() => {
+	// 		setInfos();
+	// 	}, 8000);
+	// }, [infos, setInfos]);
 
 	return (
 		<div className={styles.container}>
