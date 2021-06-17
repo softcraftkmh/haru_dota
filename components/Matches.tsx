@@ -17,9 +17,12 @@ const Matches: React.FC<MatchesProps> = ({ matches }) => {
 	);
 
 	useEffect(() => {
-		setTimeout(() => {
+		const timeout = setTimeout(() => {
 			setInfos();
 		}, 8000);
+		return () => {
+			clearTimeout(timeout);
+		};
 	}, [infos, setInfos]);
 
 	return (
