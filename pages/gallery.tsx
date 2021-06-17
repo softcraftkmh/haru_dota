@@ -11,13 +11,7 @@ import gallery11 from 'public/images/gallery/img (11).jpg';
 import gallery12 from 'public/images/gallery/img (12).jpg';
 import gallery13 from 'public/images/gallery/img (13).jpg';
 import gallery14 from 'public/images/gallery/img (14).jpg';
-import gallery15 from 'public/images/gallery/img (15).jpg';
-import gallery16 from 'public/images/gallery/img (16).jpg';
-import gallery17 from 'public/images/gallery/img (17).jpg';
-import gallery18 from 'public/images/gallery/img (18).jpg';
-import gallery19 from 'public/images/gallery/img (19).jpg';
 import gallery2 from 'public/images/gallery/img (2).jpg';
-import gallery20 from 'public/images/gallery/img (20).jpg';
 import gallery3 from 'public/images/gallery/img (3).jpg';
 import gallery4 from 'public/images/gallery/img (4).jpg';
 import gallery5 from 'public/images/gallery/img (5).jpg';
@@ -42,12 +36,6 @@ const images = [
 	gallery12,
 	gallery13,
 	gallery14,
-	gallery15,
-	gallery16,
-	gallery17,
-	gallery18,
-	gallery19,
-	gallery20,
 ];
 
 const signupInitialValues = {
