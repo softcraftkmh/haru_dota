@@ -19,14 +19,13 @@
 
 	--header-height: 80px;
 	--container-max-width: 1200px;
+	--container-vertical-margin: 32px;
 
 	--avatar-normal-width: 80px;
 	--avatar-normal-height: 40px;
 
 	--icon-normal-width: 16px;
 	--icon-normal-height: 16px;
-
-	--app-container-vertical-margin: 32px;
 
 	--input-height-normal: 44px;
 	--input-error-height-normal: 1.6rem;
@@ -39,7 +38,7 @@
 	@media #{constants.$mobile} {
 		font-size: 50%;
 		--container-max-width: calc(100vw - var(--spacing-large));
-		--app-container-vertical-margin: 16px;
+		--container-vertical-margin: 16px;
 	}
 }
 

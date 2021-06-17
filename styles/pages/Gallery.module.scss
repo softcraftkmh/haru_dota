@@ -1,9 +1,12 @@
+.container {
+	max-width: var(--container-max-width);
+}
+
 .form {
 	&__container {
 		width: 100%;
 		height: calc(
-			100vh - var(--header-height) -
-				calc(var(--app-container-vertical-margin) * 2)
+			100vh - var(--header-height) - calc(var(--container-vertical-margin) * 2)
 		);
 		display: flex;
 		align-items: center;
@@ -12,5 +15,17 @@
 	&__content {
 		max-width: var(--form-normal-max-width);
 		margin: auto;
+	}
+}
+
+.images {
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		grid-auto-rows: 200px;
+		grid-gap: 1rem;
+	}
+	&__content {
+		object-fit: contain;
 	}
 }
