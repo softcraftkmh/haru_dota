@@ -16,7 +16,6 @@ type InputProps = {
 	containerClassName?: string;
 	labelClassName?: string;
 	inputClassName?: string;
-	isShowError?: boolean;
 };
 
 const Input = ({
@@ -31,7 +30,6 @@ const Input = ({
 	containerClassName = '',
 	labelClassName = '',
 	inputClassName = '',
-	isShowError = true,
 }: InputProps) => {
 	const [inputType, setInputType] = useState(type);
 	const [field, meta] = useField(name);
@@ -57,25 +55,20 @@ const Input = ({
 				/>
 
 				{type === 'password' && isShowPassword && (
-					<Image
-						src={
-							inputType === 'text'
-								? '/icons/visibility_on.svg'
-								: '/icons/visibility_off.svg'
-						}
+					// eslint-disable-next-line @next/next/no-img-element
+					<img
+						src={`/images/icons/visibility_${
+							inputType === 'text' ? 'on' : 'off'
+						}.svg`}
 						alt="icon"
 						onClick={() =>
 							setInputType(inputType === 'text' ? 'password' : 'text')
 						}
-						className={styles.password_icon}
-						width={getCSSVarNumber('--icon-normal-width')}
-						height={getCSSVarNumber('--icon-normal-height')}
+						className={styles.password__icon}
 					/>
 				)}
 
-				{isShowError && (
-					<div className={styles.error}>{meta.touched && meta.error}</div>
-				)}
+				<div className={styles.error}>{meta.touched && meta.error}</div>
 			</div>
 		</>
 	);

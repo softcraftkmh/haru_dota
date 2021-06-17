@@ -1,4 +1,5 @@
 export function getCSSVar(cssVar: string, element?: HTMLElement) {
+	if (typeof window === 'undefined') return;
 	const value = getComputedStyle(
 		element ?? document.documentElement
 	).getPropertyValue(cssVar);
@@ -9,7 +10,8 @@ export function getCSSVar(cssVar: string, element?: HTMLElement) {
 }
 
 export function getCSSVarNumber(cssVar: string, element?: HTMLElement) {
-	return parseInt(getCSSVar(cssVar, element));
+	if (typeof window === 'undefined') return;
+	return parseInt(getCSSVar(cssVar, element)!);
 }
 
 export function setCSSVar(

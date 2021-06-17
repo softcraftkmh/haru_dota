@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from 'styles/components/layout/header.module.scss';
 
 const Header = () => {
@@ -5,9 +6,13 @@ const Header = () => {
 		<>
 			<div className={styles.container}>
 				<div className={styles.content}>
-					<a href="" className={styles.title}>
-						春 DOTA
-					</a>
+					<Link href="/">
+						<a className={styles.title}>春 DOTA</a>
+					</Link>
+
+					<Link href="/gallery">
+						<a className={styles.title}>Gallery</a>
+					</Link>
 				</div>
 			</div>
 			<div className={styles.placeholder} />

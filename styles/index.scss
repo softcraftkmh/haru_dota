@@ -28,6 +28,10 @@
 
 	--app-container-vertical-margin: 32px;
 
+	--input-height-normal: 44px;
+	--input-error-height-normal: 1.6rem;
+	--form-normal-max-width: 300px;
+
 	@media #{constants.$tablet} {
 		font-size: 60%;
 	}
